@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Función VIA (FI·VIA)</title>
+  <meta name="description" content="Escaneá el QR y probá tu vida en modo avatar. Avatars para una vida digital saludable.">
+  <style>
+    :root { --bg:#0b0f1a; --card:#111827; --text:#e5e7eb; --muted:#94a3b8; --accent:#3b82f6; }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#0b0f1a 0%,#0f172a 100%);color:var(--text);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    .wrap{max-width:960px;margin:0 auto;padding:32px}
+    .card{background:var(--card);border-radius:20px;padding:28px;box-shadow:0 10px 30px rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.06)}
+    h1{margin:0 0 6px 0;font-weight:800;letter-spacing:.2px}
+    .sub{color:var(--muted);margin:0 0 16px 0}
+    .grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:20px}
+    @media (min-width:760px){ .grid{grid-template-columns:1.2fr .8fr} }
+    .panel{padding:16px;border-radius:16px;border:1px dashed rgba(255,255,255,.1)}
+    .qr{display:block;width:100%;max-width:280px;height:auto;border-radius:12px;background:#fff;padding:14px;margin:6px 0;border:1px solid #e5e7eb}
+    .foot{margin-top:18px;color:var(--muted);font-size:13px}
+    .badge{display:inline-block;background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);color:#cfe1ff;padding:6px 10px;border-radius:999px;font-size:12px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="kicker" style="font-size:12px;color:#94a3b8;text-transform:uppercase;letter-spacing:.18em;margin-bottom:6px">Lanzamiento técnico</div>
+      <h1>Función VIA <span class="badge">FI·VIA</span></h1>
+      <p class="sub">Escaneá el QR y probá tu vida en modo avatar. <br>Avatars para una vida digital saludable.</p>
+
+      <div class="grid">
+        <section class="panel">
+          <h2 style="margin-top:0">¿Qué es?</h2>
+          <p>Una función que convierte fotos y clips en avatares listos para colaborar en red. Hoy: demo pública. Mañana: PWA.</p>
+
+          <h3>Cómo funciona</h3>
+          <ol>
+            <li>Escaneá el QR.</li>
+            <li>Elegí una foto o un clip corto.</li>
+            <li>Generá tu avatar y compartilo.</li>
+          </ol>
+
+          <p class="foot">Privacidad: no vendemos ni compartimos tus datos. Podés borrar todo cuando quieras.</p>
+        </section>
+
+        <aside class="panel">
+          <h3 style="margin-top:0">QR Función VIA</h3>
+          <!-- Acá va el QR: el archivo ya está en la misma carpeta -->
+          <img class="qr" src="qr-fivia-1024.png" alt="QR Función VIA">
+          <p class="foot">Tip: dejá margen blanco alrededor del QR para un escaneo fiable.</p>
+        </aside>
+      </div>
+    </div>
+
+    <p class="foot" style="text-align:center;margin-top:16px">© 2025 VIA · Licencia MIT</p>
+  </div>
+</body>
+</html>
